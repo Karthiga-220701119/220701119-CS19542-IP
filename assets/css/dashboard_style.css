@@ -1,0 +1,55 @@
+
+.heading{
+background :linear-gradient(to right, #4B0082, #800080, #4B0082) ;
+color : white ;
+text-align : center;
+font-family: Georgia, serif;
+font-size : 40px;
+}
+.heading p {
+margin: 0; 
+}	
+.heading p:last-of-type {
+line-height : 1.2 ;
+}
+.address{
+color : blue;
+text-align : center;
+padding : 20px;
+}
+.sidebar{
+margin : 0;
+padding : 15px;
+width : 300px;
+background-color : gray;
+position : fixed;
+height : 100%;
+overflow : auto;
+
+}
+.sidebar  a{
+display : block;
+color : purple;
+padding : 15px;
+text-decoration : none;
+}
+.sidebar  a.active{
+font-size : 21px;
+color : black;
+}
+.sidebar  a:hover:not(.active){
+background-color : lightgrey;
+color : purple;
+font-size : 21px;
+}
+.content{
+margin-left : 350px;
+padding : 1px 16px;
+height : 1000px;
+}
+table{
+background-color : grey;
+color : white;
+width: 50%;
+padding : 10px;
+}

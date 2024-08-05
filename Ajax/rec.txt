@@ -1,0 +1,5 @@
+HTML tags are the building blocks of HTML, <br>
+used to define the structure and content of a webpage. <br>
+They are enclosed in angle brackets, with an opening tag <tagname> and, in most cases, a closing tag </tagname>.<br>
+Tags can have attributes that provide additional information. For example, the <a> tag, used for hyperlinks, <br>
+often includes an href attribute to specify the URL.
