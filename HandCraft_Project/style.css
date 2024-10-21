@@ -1,0 +1,381 @@
+/* Basic styling for the website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tc {
+    text-align: center;
+    background-color: red;
+    font-style: italic;
+    color: white;
+    font-size: 14px;
+    padding: 0.2%;
+}
+
+/* Center the search form */
+.search-form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 10px solid white;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search-input {
+    width: 800px;
+    padding: 2px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-btn {
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 15px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+}
+
+.search-btn:hover {
+    background-color: rgb(246, 239, 239);
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(205, 200, 200);
+}
+
+.icon-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.icon-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.count-badge {
+    position: absolute;
+    top: 47px;
+    right: 1.5%;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    padding: 1px 2px;
+    font-size: 12px;
+    min-width: 18px;
+    text-align: center;
+}
+
+.count-badge1 {
+    position: absolute;
+    top: 47px;
+    right: 5%;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    padding: 1px 2px;
+    font-size: 12px;
+    min-width: 18px;
+    text-align: center;
+}
+
+.site-name img {
+    height: 60px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Style for the entire product container */
+.product-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Style for the grid of products */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusts the number of columns based on screen size */
+    gap: 20px; /* Space between each product card */
+    max-width: 1200px; /* Optional: restricts the grid width */
+    width: 100%; /* Ensures grid takes full width */
+}
+
+/* Individual product card styling */
+.product-card {
+    background-color: rgb(205, 200, 200);
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensuring consistent image size */
+.product-card img {
+    width: 100%; /* Full width of the card */
+    max-width: 200px; /* Restrict width for smaller displays */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Keeps aspect ratio and fills the image container */
+    margin-bottom: 15px; /* Adds space below the image */
+    border-radius: 8px;
+}
+
+/* Product title */
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Product price */
+.product-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0 15px;
+}
+
+/* Button styling for cart and wishlist */
+.product-card button {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+
+.add-to-cart,
+.add-to-wishlist {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover,
+.add-to-wishlist:hover {
+    background-color: #0056b3;
+}
+
+/* Modal styling */
+.modal-content {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+.cart-container {
+    position: relative; /* Set relative positioning */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: hwb(0 24% 13%); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure pseudo-element does not overflow */
+}
+
+.cart-container::before {
+    content: ""; /* Pseudo-element to create the blur effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(228, 47, 47, 0.5); /* Adjust the color and opacity */
+    filter: blur(10px); /* Apply blur */
+    z-index: -1; /* Send it behind the content */
+    border-radius: 8px; /* Match the border-radius of the container */
+}
+
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.cart-item h4 {
+    margin: 0;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.cart-item .item-quantity {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.cart-item .remove-item {
+    background-color: #e42f2f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item .remove-item:hover {
+    background-color: #d62828;
+}
+
+
+.total-container {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: hsl(210, 9%, 87%);
+    border-radius: 8px;
+}
+
+.total-container h3,
+.total-container h4 {
+    margin: 5px 0;
+}
+
+.address-form {
+    margin-top: 20px;
+}
+
+.address-form h3 {
+    margin-bottom: 10px;
+}
+
+.address-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.address-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.address-form button {
+    background-color: hwb(211 18% 37%);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.address-form button:hover {
+    background-color: #4B5966;
+}
+
+@media (max-width: 600px) {
+    .cart-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .address-form input {
+        padding: 8px;
+    }
+
+    .address-form button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+
